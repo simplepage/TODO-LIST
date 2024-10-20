@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: pink;
+  animation-name: hello;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hello {
+  0% {
+      background-color: rgb(178, 237, 237);
+  }
+
+  25% {
+      background-color: rgb(241, 241, 191);
+  }
+
+  50% {
+      background-color: rgb(215, 235, 184);
+  }
+
+  75% {
+      background-color: rgb(198, 234, 162);
+  }
+
+  100% {
+      background-color: rgb(178, 237, 237);
+  }
+}
+
+
+.main,
+.p2 {
+  width: 40rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.text {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  color: cornflowerblue;
+}
+
+input[type="text"] {
+  height: 5.5rem;
+  width: 30rem;
+  border-radius: 1.5rem 0rem 0rem 1.5rem;
+  font-size: 2.5rem;
+  padding: 0rem 1rem 0rem 1rem;
+  border: green solid 0.2rem;
+  color: red;
+}
+
+input[type="submit"] {
+  height: 5.7rem;
+  width: 7.5rem;
+  font-size: 2.3rem;
+  padding: 0.3rem 0.5rem 0.2rem 0rem;
+  border-radius: 0rem 1.5rem 1.5rem 0rem;
+  background-color: rgb(145, 237, 145);
+  cursor: pointer;
+  border: green solid 0.2rem;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(18, 218, 18);
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 2.5rem;
+}
+
+ul li {
+  border: green solid 0.2rem;
+  margin-top: 2.5rem;
+  background-color: rgb(145, 237, 145);
+  overflow-wrap: break-word;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: 4.6rem 25rem 3rem;
+  gap: 2rem;
+}
+
+.btn {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  color: red;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: rgba(196, 8, 8, 0.9);
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.clear button {
+  height: 4rem;
+  width: 12rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  background-color: red;
+  color: white;
+  border: red solid 0.2rem;
+  cursor: pointer;
+}
+
+.clear button:hover {
+  background-color: rgba(196, 8, 8, 0.9);
+}
+
+@media only screen and (max-width:450px) {
+  html {
+      font-size: 9px;
+  }
+}
+
+@media only screen and (max-width:405px) {
+  html {
+      font-size: 7.5px;
+  }
+}
